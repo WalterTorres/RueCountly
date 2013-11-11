@@ -32,6 +32,8 @@ Do this in your main if possible.
 There is one extra step to make it work in ios, upon building your project xCode file, you will be required to go into the project and add the folder "Countly.xcdatamodeld" manually into the resource folder. This is because OpenFL does not have a way to add files directly to that yet.
 
 
+The file can be found inside the "iosdependency" folder in the root folder.
+
 
 
 Question? Email me at: walter@arcticempire.ca 
