@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<ndll name="ruecountly" />
+	
+	<section if="ios">
+		<dependency name= "CoreTelephony.framework" />
+		<dependency name="CoreData.framework"/>
+	</section>
+	
+	<section if="android">
+		<dependency name="ruecountly" path="dependencies/android"/>
+		<android extension="ly.count.android.api.CountlyConnect" />
+	</section>
+	
+</project>
