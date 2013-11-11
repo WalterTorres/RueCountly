@@ -22,16 +22,16 @@ public class CountlyConnect extends Extension
         private static String serverID = "::ENV_ServerID::"; 
         private static String appKey = "::ENV_AppKey::"; 
         
-        private static Chartboost cb;
         
         @Override public void onCreate (Bundle savedInstanceState)
         {
 			if(CountlyConnect.serverID == "null" || CountlyConnect.appKey == "null")
 			{
+				Log.e("CountlyConnect", "Enviroments variables NOT SET");
 				return;
 			}
             Log.e("CountlyConnect", "Linking to Countly service");
-           Countly.sharedInstance().init(context, CountlyConnect.serverID, CountlyConnect.appKey);
+           Countly.sharedInstance().init(Extension.mainContext, CountlyConnect.serverID, CountlyConnect.appKey);
         }
         
 
