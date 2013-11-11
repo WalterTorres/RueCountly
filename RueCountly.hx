@@ -10,7 +10,7 @@ import neko.Lib;
 class RueCountly
 {
 	#if ios
-	private static var ruecountly_init = Lib.load ("ruecountly", "lyInit",2);
+	private static var ruecountly_init = Lib.load ("ruecountly", "ly_Init",2);
 	public static function InitCountly(ServerID:String, AppKey:String):Void
 	{
 		ruecountly_init(ServerID, AppKey);

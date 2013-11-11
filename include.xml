@@ -6,6 +6,9 @@
 	<section if="ios">
 		<dependency name= "CoreTelephony.framework" />
 		<dependency name="CoreData.framework"/>
+		<template path="iosdependency/Countly.xcdatamodeld" rename="Countly.xcdatamodeld"/>
+		
+
 	</section>
 	
 	<section if="android">

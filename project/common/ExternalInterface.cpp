@@ -15,12 +15,12 @@ using namespace ruecountly;
 
 #ifdef IPHONE
 
-value lyInit(value serverId, value appKey)
+value ly_Init(value serverId, value appKey)
 {
     lyInit(val_string(serverId), val_string(appKey));
     return alloc_null();
 }
-DEFINE_PRIM(lyInit, 2);
+DEFINE_PRIM(ly_Init, 2);
 
 
 #endif
